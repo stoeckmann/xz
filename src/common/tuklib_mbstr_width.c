@@ -54,7 +54,7 @@ tuklib_mbstr_width(const char *str, size_t *bytes)
 	}
 
 	// Require that the string ends in the initial shift state.
-	// This way the caller can be combine the string with other
+	// This way the caller can combine the string with other
 	// strings without needing to worry about the shift states.
 	if (!mbsinit(&state))
 		return (size_t)-1;
